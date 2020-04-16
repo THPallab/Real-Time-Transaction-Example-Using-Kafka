@@ -12,10 +12,9 @@ while (1):
     p = Producer({'bootstrap.servers': '192.168.1.107:9092'})
 
     try:
-            host='192.168.1.104' #client ip
+            host='192.168.***.***' #client/consumer ip
             port = 9092
-            server = ('192.168.1.107', 9092)    #server ip
-
+            server = ('192.168.***.***', 9092)    #server/producer ip
             s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
             s.bind((host,port))
 
